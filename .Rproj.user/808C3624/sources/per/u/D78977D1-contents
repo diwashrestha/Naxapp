@@ -1,0 +1,17 @@
+hcmap("countries/np/np-all", data = data_fake, value = "value",
+      joinBy = c("hc-a2", "code"), name = "Fake data",
+      dataLabels = list(enabled = TRUE, format = '{point.name}'),
+      borderColor = "#000000", borderWidth = 0.2,
+      tooltip = list(valueDecimals = 2, valuePrefix = "$", valueSuffix = " USD")) %>%  hc_mapNavigation(enabled = TRUE) 
+
+
+mapdata <- get_data_from_map(download_map_data("countries/np/np-all"))
+glimpse(mapdata
+
+set.seed(134)
+
+data_fake <- mapdata %>% 
+    select(code = `hc-a2`) %>% 
+    mutate(value = 1e5 * abs(rt(nrow(.), df = 10)))
+
+glimpse(data_fake)

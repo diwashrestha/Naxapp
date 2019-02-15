@@ -1,0 +1,24 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1550236536609.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "770AEDF5",
+    "lastKnownWriteTime" : 1550236549,
+    "last_content_update" : 1550236549639,
+    "path" : "E:/Projekt/nepal_provincial_map/shape2json.R",
+    "project_path" : "shape2json.R",
+    "properties" : {
+        "tempName" : "Untitled3"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

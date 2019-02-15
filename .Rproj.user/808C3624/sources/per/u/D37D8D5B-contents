@@ -1,0 +1,15 @@
+library(geojsonio)
+library("sp")
+library(dplyr)
+library(leaflet)
+url <- "http://localboundries.oknp.org/js/province.geojson"
+out <- topojson_read("E:/Projekt/nepal_provincial_map/data/map/gis-data/province.topojson", verbose = FALSE)
+#plot(out)
+
+m <- leaflet(out) %>%
+    setView(84.12, 28.39, 4) %>%
+    addProviderTiles("MapBox", options = providerTileOptions(
+        id = "mapbox.light",
+        accessToken = Sys.getenv('MAPBOX_ACCESS_TOKEN')))
+
+m %>% addPolygons(popup = ~Title)
